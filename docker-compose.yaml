@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    container_name: madhuri-23a91a0510-app-1
+    volumes:
+      - ./data/encrypted_seed.txt:/app/encrypted_seed.txt
+    command: python decrypt_seed.py
